@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <div class="1">
+             <div class="container">
+            <div class="row">
+                <div class="text-center d-flex justify-content-center m-5 ">
+                    <h1>Bookmarker</h1>
+                </div>
+                <hr>
+
+                <div class="my-par text-center d-flex justify-content-center m-5">
+                  <h3>                              
+  <i class="fa-xl fa-solid fa-bookmark my-3 mx-2 "></i>
+   Bookmark your favorite sites
+  <i class=" fa-xl fa-solid fa-bookmark my-3 mx-2"></i></h3>                    
+                </div>
+                <div class="site-name w-100 d-flex flex-column justify-content-center">
+                    <label for="bookmarkName" class="pb-2 fw-semibold">
+                      <i class="fa-solid fa-book-bookmark pe-2"></i>
+                      Site Name</label>
+                    <input type="text" placeholder="Bookmark Name" class="form-control" oninput="checkValidationName()" id="bookmarkName">
+                    <p class="alert alert-danger d-none"  id="msName"> Website Name is not valid</p>
+
+                  </div>
+                  <div class="site-url w-100 d-flex flex-column justify-content-center">
+                    <label for="bookmarkURL" class="pb-2 fw-semibold">
+                      <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                    <input type="url" placeholder="Website URL" oninput="checkValidationUrl()" class="form-control" id="bookmarkURL">
+                    <p class="alert alert-danger d-none"  id="msUrl"> Website url is not valid</p>
+
+                  </div>
+                  
+                  
+                   <button class="btn1 btn btn-submit px-5 m-5 mx-auto" id="submitBtn">Submit</button>
+                 <div>
+                  <hr class="m-2">
+                  
+
+
+        <table class="table text-center">
+            <thead>
+                <tr>
+                     <th> Index </th>
+                     <th> Name </th>
+                     <th> url</th>
+                     <th> visit</th>
+                     <th> Delete</th>
+                </tr>
+            </thead>
+            <tbody class="text-center" id="tableData">
+             
+            </tbody>
+        </table>
+    </div>
+
+                 
+            </div>
+
+        </div>
+        </div>
+       
+    </section>
+
+
+
+
+
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
